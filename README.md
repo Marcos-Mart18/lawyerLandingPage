@@ -62,6 +62,6 @@ src/
 └── styles.css
 ```
 
-## 📄 Licencia
+## Licencia
 
 Proyecto privado - Todos los derechos reservados
