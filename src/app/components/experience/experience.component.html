@@ -1,0 +1,82 @@
+<section id="experiencia" class="py-24 bg-gradient-to-b from-white to-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
+        Nuestra Experiencia
+      </h2>
+      <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+        Empresas líderes que confían en nosotros
+      </p>
+    </div>
+
+    <!-- Sector Público -->
+    <div class="mb-20">
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold text-ice-600 mb-4 text-center">Sector Público</h3>
+        <p class="text-slate-700 text-center max-w-4xl mx-auto leading-relaxed">
+          Desde el año 2006, la firma y/o sus socios han asesorado a diversas entidades públicas del orden departamental y municipal, dentro de las cuales se encuentran: Alcaldía Mayor de Bogotá, Corporación Autónoma Regional de Cundinamarca – CAR, Alcaldía Municipal de Cajicá, Alcaldía Municipal de Soacha, Instituto Colombiano de Bienestar Familiar – ICBF, Alcaldía Municipal de Tabio, E.S.E. Hospital Mario Gaitán Yanguas de Soacha, entre otras.
+        </p>
+      </div>
+
+      <!-- Marquee hacia la derecha -->
+      <div class="relative overflow-hidden py-8">
+        <div class="flex gap-8 animate-marquee-right">
+          <div *ngFor="let logo of publicLogos" 
+            class="flex-shrink-0 w-48 h-32 bg-navy-900 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center p-6 grayscale hover:grayscale-0 group cursor-pointer border border-navy-700">
+            <img [src]="logo.src" [alt]="logo.alt" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300 brightness-0 invert">
+          </div>
+          <!-- Duplicate for infinite scroll -->
+          <div *ngFor="let logo of publicLogos" 
+            class="flex-shrink-0 w-48 h-32 bg-navy-900 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center p-6 grayscale hover:grayscale-0 group cursor-pointer border border-navy-700">
+            <img [src]="logo.src" [alt]="logo.alt" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300 brightness-0 invert">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sector Privado -->
+    <div class="mb-16">
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold text-ice-600 mb-4 text-center">Sector Privado</h3>
+        <p class="text-slate-700 text-center max-w-4xl mx-auto leading-relaxed">
+          Desde el año 2006, la firma y/o sus socios han asesorado a diversas sociedades comerciales, asociaciones y entidades sin ánimo de lucro de los tres sectores de la economía (Agropecuario, Industrial y de Servicios), abarcando sectores tales como: Construcción, hotelero, alimentos, aviación, minero, hospitalario, servicios públicos, entre otros.
+        </p>
+      </div>
+
+      <!-- Marquee hacia la izquierda -->
+      <div class="relative overflow-hidden py-8">
+        <div class="flex gap-8 animate-marquee-left">
+          <div *ngFor="let logo of privateLogos" 
+            class="flex-shrink-0 w-48 h-32 bg-navy-900 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center p-6 grayscale hover:grayscale-0 group cursor-pointer border border-navy-700">
+            <img [src]="logo.src" [alt]="logo.alt" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300 brightness-0 invert">
+          </div>
+          <!-- Duplicate for infinite scroll -->
+          <div *ngFor="let logo of privateLogos" 
+            class="flex-shrink-0 w-48 h-32 bg-navy-900 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center p-6 grayscale hover:grayscale-0 group cursor-pointer border border-navy-700">
+            <img [src]="logo.src" [alt]="logo.alt" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300 brightness-0 invert">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold text-ice-600 mb-2">20+</div>
+        <div class="text-slate-600">Años de Experiencia</div>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold text-ice-600 mb-2">500+</div>
+        <div class="text-slate-600">Casos Exitosos</div>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold text-ice-600 mb-2">98%</div>
+        <div class="text-slate-600">Satisfacción</div>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold text-ice-600 mb-2">150+</div>
+        <div class="text-slate-600">Empresas Atendidas</div>
+      </div>
+    </div>
+  </div>
+</section>

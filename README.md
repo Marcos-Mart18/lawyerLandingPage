@@ -1,59 +1,95 @@
-# LawyerPage
+# Landing Page - Firma Legal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Landing page corporativa moderna para firma de abogados, desarrollada con Angular 19 y Tailwind CSS.
 
-## Development server
+## 🎨 Características de Diseño
 
-To start a local development server, run:
+- **Estilo "Lujo Silencioso"**: Diseño minimalista y elegante con paleta de azules corporativos
+- **Glassmorphism**: Efectos de vidrio esmerilado en navbar y elementos clave
+- **Micro-animaciones**: Transiciones suaves y animaciones al scroll
+- **Responsive**: Totalmente adaptable a dispositivos móviles y tablets
 
-```bash
-ng serve
-```
+## 🚀 Características Técnicas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Componentes Modulares
 
-## Code scaffolding
+1. **Navbar**: Navegación sticky con glassmorphism y cambio de color al scroll
+2. **Hero**: Efecto Ken Burns con crossfade entre dos imágenes de fondo
+3. **Features**: Grid 3x3 interactivo con expansión de tarjetas al hover
+4. **Services**: Modales dinámicos para detalles de servicios (sin redirección)
+5. **Experience**: Tabs inteligentes con carrusel infinito de logos
+6. **Contact**: Formulario multistep con validaciones reactivas
+7. **Footer**: Información corporativa y enlaces
+8. **Floating Buttons**: Botones de WhatsApp y teléfono con efecto pulso
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Servicios
 
-```bash
-ng generate component component-name
-```
+- **Cobro Prejurídico y Jurídico**: Recuperación de cartera empresarial
+- **Asesoría Jurídica Empresarial**: Representación legal integral
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📦 Instalación
 
 ```bash
-ng test
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm start
 ```
 
-## Running end-to-end tests
+La aplicación estará disponible en `http://localhost:4200`
 
-For end-to-end (e2e) testing, run:
+## 🛠️ Tecnologías
 
-```bash
-ng e2e
+- Angular 19
+- Tailwind CSS
+- TypeScript
+- Reactive Forms
+
+## 📱 Widgets de Acción
+
+- Botón flotante de WhatsApp (inferior derecha)
+- Botón flotante de teléfono (inferior derecha)
+- Botón scroll to top (aparece después de 300px de scroll)
+
+## 🎯 Paleta de Colores
+
+- **Navy**: Azul marino corporativo (#102a43 - #f0f4f8)
+- **Slate**: Gris azulado (#0f172a - #f8fafc)
+- **Ice**: Azul hielo (#0c4a6e - #f0f9ff)
+
+## 📝 Personalización
+
+Para personalizar la landing page:
+
+1. **Imágenes**: Reemplaza las imágenes en `src/assets/`
+2. **Colores**: Modifica `tailwind.config.js`
+3. **Contenido**: Edita los componentes en `src/app/components/`
+4. **Contacto**: Actualiza números de teléfono y WhatsApp en `floating-buttons.component.html`
+
+## 🌐 Estructura del Proyecto
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── navbar/
+│   │   ├── hero/
+│   │   ├── features/
+│   │   ├── services/
+│   │   ├── experience/
+│   │   ├── contact/
+│   │   ├── footer/
+│   │   └── floating-buttons/
+│   ├── app.component.ts
+│   └── app.routes.ts
+├── assets/
+│   ├── banner/
+│   ├── logo/
+│   └── imagesService/
+└── styles.css
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📄 Licencia
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Proyecto privado - Todos los derechos reservados
