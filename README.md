@@ -25,7 +25,7 @@ npm start
 
 La aplicación estará disponible en `http://localhost:4200`
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - Angular 19
 - Tailwind CSS
