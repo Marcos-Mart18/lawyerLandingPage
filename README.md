@@ -13,7 +13,7 @@ Landing page corporativa moderna para firma de abogados, desarrollada con Angula
 7. **Footer**: Información corporativa y enlaces
 8. **Floating Buttons**: Botones de WhatsApp y teléfono con efecto pulso
 
-## 📦 Instalación
+## Instalación
 
 ```bash
 # Instalar dependencias
